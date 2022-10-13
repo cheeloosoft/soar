@@ -2,7 +2,7 @@
 
 [toc]
 
-## 建议使用 AS 关键字显示声明一个别名
+## 建议使用 AS 关键字显式声明一个别名
 
 * **Item**:ALI.001
 * **Severity**:L0
@@ -262,7 +262,7 @@ select tb1.col, tb2.col from tb1, tb2 where id=1 group by tb1.col, tb2.col
 ```sql
 select c1,c2,c3 from t1 where c1='foo' order by c2 desc, c3 asc
 ```
-## 请为 GROUP BY 显示添加 ORDER BY 条件
+## 请为 GROUP BY 显式添加 ORDER BY 条件
 
 * **Item**:CLA.008
 * **Severity**:L2
